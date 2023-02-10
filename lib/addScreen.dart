@@ -1,31 +1,25 @@
 import 'package:exam_10_02_2023/modelClass.dart';
 import 'package:flutter/material.dart';
 
-class Editscreen extends StatefulWidget {
-  const Editscreen({Key? key}) : super(key: key);
+class Addscreen extends StatefulWidget {
+  const Addscreen({Key? key}) : super(key: key);
 
   @override
-  State<Editscreen> createState() => _EditscreenState();
+  State<Addscreen> createState() => _AddscreenState();
 }
 
-class _EditscreenState extends State<Editscreen> {
+class _AddscreenState extends State<Addscreen> {
 
+
+  TextEditingController editId = TextEditingController();
+  TextEditingController editName = TextEditingController();
+  TextEditingController editStandard = TextEditingController();
 
 
 
 
   @override
   Widget build(BuildContext context) {
-
-
-    Modeldata edit = ModalRoute.of(context)!.settings.arguments as Modeldata;
-
-
-    TextEditingController editId = TextEditingController(text: "${edit.stId}");
-    TextEditingController editName = TextEditingController(text: "${edit.stName}");
-    TextEditingController editStandard = TextEditingController(text: "${edit.stStd}");
-
-
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -106,6 +100,8 @@ class _EditscreenState extends State<Editscreen> {
 
                   setState(() {
 
+                    Modeldata add = Modeldata(stId: "${editId.text}",stName: "${editName.text}",stStd: "${editStandard.text}");
+                    Navigator.pop(context);
 
                   });
                 },
