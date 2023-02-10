@@ -30,6 +30,13 @@ class _SpleshscreenState extends State<Spleshscreen> {
     Timer(Duration(seconds: 3),() {
       Navigator.pushReplacementNamed(context, 'home');
     },);
-    return Scaffold(body: Center(child: Icon(Icons.all_inclusive,color: Colors.green,size: 150,)),);
+    return Scaffold(body: Center(child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text("Students",style: TextStyle(color: Colors.green,fontSize: 25,letterSpacing: 2,fontWeight: FontWeight.w500)),
+        SizedBox(width: 2,),
+        Icon(Icons.all_inclusive,color: Colors.green,size: 45,),
+      ],
+    )),);
   }
 }
