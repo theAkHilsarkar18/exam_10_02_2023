@@ -106,7 +106,7 @@ class _HomescreenState extends State<Homescreen> {
 
 
                                   //
-                                  icon: Icon(Icons.numbers,color: Colors.green,),
+                                  icon: Icon(Icons.person_outline,color: Colors.green,),
                                   label: Text("Student Name",style: TextStyle(color: Colors.green,letterSpacing: 2,fontWeight: FontWeight.w500),),
 
                                 ),
@@ -130,7 +130,7 @@ class _HomescreenState extends State<Homescreen> {
 
 
                                   //
-                                  icon: Icon(Icons.numbers,color: Colors.green,),
+                                  icon: Icon(Icons.school_outlined,color: Colors.green,),
                                   label: Text("Standard",style: TextStyle(color: Colors.green,letterSpacing: 2,fontWeight: FontWeight.w500),),
 
                                 ),
@@ -272,7 +272,7 @@ class _HomescreenState extends State<Homescreen> {
 
 
                                 //
-                                icon: Icon(Icons.numbers,color: Colors.green,),
+                                icon: Icon(Icons.person_outline,color: Colors.green,),
                                 label: Text("Student Name",style: TextStyle(color: Colors.green,letterSpacing: 2,fontWeight: FontWeight.w500),),
 
                               ),
@@ -296,7 +296,7 @@ class _HomescreenState extends State<Homescreen> {
 
 
                                 //
-                                icon: Icon(Icons.numbers,color: Colors.green,),
+                                icon: Icon(Icons.school_outlined,color: Colors.green,),
                                 label: Text("Standard",style: TextStyle(color: Colors.green,letterSpacing: 2,fontWeight: FontWeight.w500),),
 
                               ),
